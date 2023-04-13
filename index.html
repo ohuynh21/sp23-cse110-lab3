@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pomodoro Timer First Brainstorm</title>
+        <meta charset = "UTF-8">
+        <meta name = "meeting minutes" content = "pomodoro, brainstorm, discussion">
+        <link rel= "icon" type= "img/png" href = "pomodoro.png">
+    </head>
+
+    <body>
+        <header>
+            <div class = "title">
+                <h1>Brainstorming</h1>
+                <h3>12 April, 2023</h3>
+            </div>
+            <nav>
+                <div class = "Table_of_Contents">
+                    <ul>
+                        <li><a href="#Agenda">Agenda</a></li>
+                        <li><a href="#Attendance_List">Attendance List</a></li>
+                        <li><a href="#Unfinished_Business">Unfinished Business</a></li>
+                        <li><a href="#New_Business">New Business</a></li>
+                        <li><a href="#Questions_&_Concerns">Questions & Concerns</a></li>
+                        <li><a href="#Meeting_Recordings">Meeting Recordings</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <a id="Agenda">
+                <section>
+                    <h2><span class = "topics">Agenda</span></h2>
+                    <hr>
+                    <p> The purpose of this meeting is to brainstorm ideas for what features our 
+                        we want our pomodoro timer to include. We will first discuss the core features our timer <em>must</em> contain, and
+                        then move over to a conversation about extra features (add-ons) that would be cool to have and 
+                        make the end user experience better. Participants are encouraged to go wild with
+                        their ideas as we are simply just trying to come up with some unique and interesting features to implement
+                        that would make our app stand out from the crowd. No ideas will be rejected in this meeting, but we will vote on ideas worth keeping in
+                        the next session.
+                    </p>
+                </section>
+            </a>
+
+            <section>
+                <h2 id = "Attendance_List">Attendance List</h2>
+                <hr>
+                <p>The following persons were present during this meeting:</p>
+                <ul>
+                    <li>Owen Huynh</li>
+                    <li>Sacha Heintze</li>
+                    <li>Kumaran Braun</li>
+                    <li>Elysia Vitali</li>
+                    <li>Ulderico Favreau</li>
+                    <li>Vienna Simon</li>
+                    <li>Steph Sung</li>
+                    <li>Sunitha Fleischer</li>
+                    <li>Tamara Seaver</li>
+                    <li>Rufus Lindquist</li>
+                    <li>Gouyen Ramsey</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id = "Unfinished_Business">Unfinished Business</h2>
+                <hr>
+                <p> Kumaran Braun and Elysia Vitali are new additions to the team! Since they were not in attendance last week, we will start with their introductions
+                    before proceeding onto today's topics.
+                </p>
+            </section>
+
+            <section>
+            <h2 id = "New_Business">New Business</h2>
+            <hr>
+            <p> Today we discussed the features our pomodoro timer must have in order for the project to be considered successful.
+                Note that anything beyond these agreed upon specifications (see Essentials below) are considered "<i>icing on the cake</i>" and should only be implemented
+                if time permits.</p>
+
+                <h4> Essentials: </h4>
+                    <ol>
+                        <li> Timer must alternate between <strong>work</strong> and <b>break</b> sessions </li>
+                        <li> Work sessions should be <em>25</em> minutes long by default</li>
+                        <li> Break sessions should be <em>5</em> minutes long by default</li>
+                        <li> Every third break session should be <em>15</em> minutes long</li>
+                        <li> There must be a clear indicator for the time remaining in the current work/break session </li>
+                        <li> The user must be able to clearly tell whether they are currently in an active work or break session</li>
+                        <li> The user must be able to pause the timer in the middle of any session</li>
+                        <li> The user must be able to restart/stop the timer (restart the timer and clear history of current number of work/break sessions taken)</li>
+                        <li> The user must be alerted when the timer expires for the current work/break session</li>
+                    </ol>
+                <h4> Add-ons </h4>
+                    <ol>
+                       <li> Add ability to customize work/break session duration</li> 
+                       <li> Add custom notification method (sound, text notification, etc) </li>
+                       <li> Add pomodoro timer history so users can track the number of pomodoro sessions completed </li>
+                       <li> Add custom UI to replace/accompany countdown timer</li>
+                    </ol>
+            </section>
+
+            <section>
+            <h2 id = "Questions_&_Concerns">Questions & Concerns</h2>
+                <hr>
+                <p> Several questions regarding certain aspects of the project were brought up during this meeting. They have been listed below and are accompanied by their answers (if applicable). </p>
+                <details>
+                <summary>Custom UI Design</summary>
+                <p> <b>Sacha Heintze:</b> Regarding the custom UI, what might that look like?</p>
+                <p> <b>Steph Sung:</b> I have provided some renders of possible UI ideas before this meeting. Have a look at these. [The renders have been attached below]</p>
+                
+                    <img src = "render1.png" alt = "pomodoro render 1" width = "500 px">
+                    <img src = "render2.png" alt = "pomodoro render 2" width = "500 px">
+                </details>
+                <details>
+                    <summary> Role Assignment </summary>
+                    <p> <b>Kumaran Braun:</b> How are we going to divide up the work?</p>
+                    <p> <b>Owen Huynh:</b> We will discuss who is responsible for what in the next meeting. Our plan is to match people with their area of expertise
+                    so that things can get started quickly.</p>
+                </details>
+                <details>
+                    <summary> Notification Sounds </summary>
+                    <p> <b>Rufus Lindquis:</b> What kind of notification sounds should we use to alert the user when the timer is up</p>
+                    <p> <b>Gouyen Ramsey:</b> I have prepared some audio samples in advance. [The audio samples have been attached below]</p>
+                    <audio controls>
+                        <source src = "morning_alarm.mp3" type = "audio/mp3">
+                        <source src = "morning_alarm.mp3" type = "audio/mp3">
+                        Your browser does not support the Audio tag.
+                    </audio>
+                    <audio controls>
+                        <source src = "rain_alarm.mp3" type = "audio/mp3">
+                        <source src = "rain_alarm.mp3" type = "audio/mp3">
+                        Your browser does not support the Audio tag.
+                    </audio>
+                </details>
+
+            </section>
+
+            <section>
+                <h2 id = "Meeting_Recordings">Meeting Recordings</h2>
+                <hr>
+                <video width = "500 px" controls>
+                    <source src = "Finance.mp4" type = "video/mp4">
+                    Your browser does not support the video tag.
+                </video><br><br>
+                <audio controls>
+                    <source src = "Finance.mp4" type = "audio/mp4">
+                    Your browser does not support the Audio tag.
+                </audio>
+            </section>
+
+            <section>
+                <h2>Enter to Win a $50 Gift Card</h2>
+                <hr>
+                <form>
+                <fieldset>
+                    <label for="first_name"> First Name:</label>
+                    <input type = "text" id="first_name" name = "first_name"><br>
+                    <label for="last_name"> Last Name:</label>
+                    <input type = "text" id="last_name" name = "last_name"><br>
+                    
+                    <p> What is your grade level</p>
+                    <input type = "radio" id = "grade1" name = "grade" value = "Freshman">
+                    <label for = "grade1">Freshman</label><br>
+                    <input type = "radio" id = "grade2" name = "grade" value = "Sophomore">
+                    <label for = "grade2">Sophomore</label><br>
+                    <input type = "radio" id = "grade3" name = "grade" value = "Junior">
+                    <label for = "grade3">Junior</label><br>
+                    <input type = "radio" id = "grade4" name = "grade" value = "Senior">
+                    <label for = "grade4">Senior</label><br><br>
+                    
+                    <label for = "college"> What is your college? </label>
+                    <select name = "college" id = "college">
+                        <option value="Revelle">Revelle</option>
+                        <option value="Muir">Muir</option>
+                        <option value="Marshall">Marshall</option>
+                        <option value="ERC">ERC</option>
+                        <option value="Sixth">Sixth</option>
+                        <option value="Seventh">Seventh</option>
+                        <option value="Eighth">Eighth</option>
+                        <option value="Warren">Warren</option>
+                    </select>
+
+
+                    <p>What other classes are you taking this quarter</p>
+
+                    <input type = "checkbox" id = "101" name = "101" value = "101">
+                    <label for = "101">CSE101</label><br>
+                    <input type = "checkbox" id = "105" name = "105" value = "105">
+                    <label for = "105">CSE105</label><br>
+                    <input type = "checkbox" id = "130" name = "130" value = "130">
+                    <label for = "130">CSE130</label><br>
+                    <br>
+
+                    <label for = "gdate"> Graduation Date</label><br>
+                    <input type = "date" id = "gdate" name = "gdate"><br>
+                    <br>
+                    
+                    <label for = "mylist">Which of the following is your favorite programming language</label>
+                    <br>
+                    <input list= "mylist" id = "favlang" name = "favlang"><br><br>
+                    <datalist id  = "mylist">
+                        <option value = "Python">
+                        <option value = "Java">
+                        <option value = "C">
+                        <option value = "C++">
+                        <option value = "Other">
+                    </datalist>
+
+                
+                    <label for= "comments">Comments:</label><br>
+                    <textarea id= "comments" name = "comments" rows = "2" cols = "50">
+                    Comments here
+                    </textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+
+                </form>
+                
+            </section>
+        </main>
+        <footer>
+            <p> CSE 110 Lab 2 </p>
+            <p> Written by Owen Huynh </p>
+        </footer>
+    </body>
+</html>
