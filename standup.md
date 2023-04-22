@@ -8,7 +8,7 @@ Location: Geisel
 - Name
 - Name
 - Name
-## Share What You Did Yesterday:
+## Share What You Did <span style = "color:yellow;">Yesterday </span>:
 
 - Name
     ```
@@ -22,7 +22,7 @@ Location: Geisel
     ```
     Completed Task(s) Go Here
     ```
-## Share What You Will Do Today:
+## Share What You Will Do <span style = "color:green;"> Today </span>:
 - Name
     ```
     Today's Task(s) Goes Here
@@ -36,7 +36,7 @@ Location: Geisel
     Today's Task(s) Goes Here
     ```
 
-## Any Obstacles or Impediments:
+## Any <span style = "color:red;"> Obstacles </span> or <span style = "color:red;"> Impediments </span>
 - Task Name
     ```
     List obstacles or impediments related to the task here
