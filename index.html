@@ -5,12 +5,28 @@
         <meta charset = "UTF-8">
         <meta name = "meeting minutes" content = "pomodoro, brainstorm, discussion">
         <link rel = "icon" type= "img/png" href = "assets/pomodoro.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <style>
+            #title_text{
+                color: rgb(17, 200, 17);
+            }
+        </style>
     </head>
 
     <body>
         <header>
             <div class = "title">
-                <h1>Pomodoro Timer Second Meeting </h1>
+                <h1> 
+                    <span style = "color: #11c811;"> Pomodoro </span> 
+                    <span style = "color: rgb(17, 200, 17)"> Timer </span> 
+                    <span id = "title_text"> Second </span>
+                    <span style = "color: hsl(120,84%,43%);"> Meeting </span>  
+                </h1>
+                <img src = "assets/pomodoro.png" id = "tomato">
+                
                 <h2>Brainstorming</h2>
                 <h3>12 April, 2023</h3>
             </div>
@@ -30,7 +46,7 @@
 
         <main>
             <section class = "block">
-                <a id="Agenda">
+                <div id="Agenda">
                     <h2><span class = "topic">Agenda</span></h2>
                     <hr>
                     <p> The purpose of this meeting is to <strong>brainstorm</strong> ideas for what features our 
@@ -41,25 +57,26 @@
                     that would make our app stand out from the crowd. <em> No ideas will be rejected in this meeting, but we will vote on ideas worth keeping in
                     the next session.</em>
                      </p>   
-                </a>
+                    </div>
             </section>
 
             <section class = "block">
-                <h2 id = "Attendance_List"><span class = "topic">Attendance List</span></h2>
+                <h2 id = "attendance"><span class = "topic">Attendance List</span></h2>     
+                <img id = "attendance" src = "assets/attendance.png">
                 <hr>
                 <p>The following persons were present during this meeting:</p>
-                <ul>
-                    <li>Owen Huynh</li>
-                    <li>Sacha Heintze</li>
-                    <li>Kumaran Braun</li>
-                    <li>Elysia Vitali</li>
-                    <li>Ulderico Favreau</li>
-                    <li>Vienna Simon</li>
-                    <li>Steph Sung</li>
-                    <li>Sunitha Fleischer</li>
-                    <li>Tamara Seaver</li>
-                    <li>Rufus Lindquist</li>
-                    <li>Gouyen Ramsey</li>
+                <ul class = "grid_container">
+                    <li class = "grid_item">Owen Huynh</li>
+                    <li class = "grid_item">Sacha Heintze</li>
+                    <li class = "grid_item">Kumaran Braun</li>
+                    <li class = "grid_item">Elysia Vitali</li>
+                    <li class = "grid_item">Ulderico Favreau</li>
+                    <li class = "grid_item">Vienna Simon</li>
+                    <li class = "grid_item">Steph Sung</li>
+                    <li class = "grid_item">Sunitha Fleischer</li>
+                    <li class = "grid_item">Tamara Seaver</li>
+                    <li class = "grid_item">Rufus Lindquist</li>
+                    <li class = "grid_item">Gouyen Ramsey</li>
                 </ul>
             </section>
 
@@ -71,14 +88,14 @@
                 </p>
             </section>
 
-            <section>
+            <section class = "block">
             <h2 id = "New_Business"><span class = "topic">New Business</span></h2>
             <hr>
             <p> Today we discussed the features our pomodoro timer must have in order for the project to be considered successful.
                 Note that anything beyond these agreed upon specifications (see Essentials below) are considered "<i>icing on the cake</i>" and should only be implemented
                 if time permits.</p>
 
-                <h4> Essentials: </h4>
+                <h4 id = "essentials"> Essentials: </h4>
                     <ol>
                         <li> Timer must alternate between <strong>work</strong> and <b>break</b> sessions </li>
                         <li> Work sessions should be <em>25</em> minutes long by default</li>
@@ -90,13 +107,21 @@
                         <li> The user must be able to restart/stop the timer (restart the timer and clear history of current number of work/break sessions taken)</li>
                         <li> The user must be alerted when the timer expires for the current work/break session</li>
                     </ol>
-                <h4> Add-ons </h4>
+                <h4 id = "add-ons"> Add-ons </h4>
                     <ol>
                        <li> Add ability to customize work/break session duration</li> 
                        <li> Add custom notification method (sound, text notification, etc) </li>
                        <li> Add pomodoro timer history so users can track the number of pomodoro sessions completed </li>
                        <li> Add custom UI to replace/accompany countdown timer</li>
                     </ol>
+            <p> We also looked at several logos for the web app:</p>
+            <div class = "flex_container">
+                <img class = "item" src = "assets/1.png">
+                <img class = "item" src = "assets/2.png">
+                <img class = "item" src = "assets/3.png">
+                <img class = "item" src = "assets/4.png">
+                <img class = "item" src = "assets/5.png">
+            </div>
             </section>
 
             <section class = "block">
@@ -107,9 +132,10 @@
                 <summary>Custom UI Design</summary>
                 <p> <b>Sacha Heintze:</b> Regarding the custom UI, what might that look like?</p>
                 <p> <b>Steph Sung:</b> I have provided some renders of possible UI ideas before this meeting. Have a look at these. [The renders have been attached below]</p>
-                
-                    <img src = "assets/render1.png" alt = "pomodoro render 1" width = "500">
-                    <img src = "assets/render2.png" alt = "pomodoro render 2" width = "500">
+                <img src = "assets/render1.png" alt = "pomodoro render 1" width = "500">
+                <img src = "assets/render2.png" alt = "pomodoro render 2" width = "500">
+                <img src = "assets/render3.png" alt = "pomodoro render 3" width = "500">
+                    
                 </details>
                 <details>
                     <summary> Role Assignment </summary>
@@ -138,7 +164,7 @@
             <section class = "block">
                 <h2 id = "Meeting_Recordings">Meeting Recordings</h2>
                 <hr>
-                <video width = "500" controls>
+                <video controls>
                     <source src = "assets/Finance.mp4" type = "video/mp4">
                     Your browser does not support the video tag.
                 </video><br><br>
@@ -217,7 +243,7 @@
             </section>
         </main>
         <footer>
-            <p> CSE 110 Lab 2 </p>
+            <p> CSE 110 Lab 3 </p>
             <p> Written by Owen Huynh </p>
         </footer>
     </body>
